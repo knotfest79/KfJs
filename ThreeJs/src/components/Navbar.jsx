@@ -22,15 +22,17 @@ const Links = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 200px;
+  width: 150px;
   height: auto;
   object-fit: contain; 
+  margin: 10px;
 `;
 
 const List = styled.ul`
   display: flex;
   gap: 20px;
   list-style: none;
+  
 `;
 
 const ListItem = styled.li`
@@ -38,9 +40,9 @@ cursor: pointer;
 margin: 10px;
 `;
 
-const Icon = styled.img`
-width: 30px;
-`;
+// const Icon = styled.img`
+// width: 30px;
+// `;
 
 
 const Icons = styled.div`
@@ -79,7 +81,7 @@ const Navbar = () => {
         </Links>
        
         <Icons>
-          <Icon src="./img/search.png" alt="Search Icon" />
+          {/* <Icon src="./img/search.png" alt="Search Icon" /> */}
           <Button>Hire Now</Button>
         </Icons>
         

@@ -21,11 +21,11 @@ height: 100vh;
 `;
 
 const Left = styled.div`
-flex: 3;
+flex: 2;
 display: flex;
 flex-direction: column;
 justify-content: center;
-gap: 20px;
+gap: 5px;
 `;
 const Title = styled.h1`
 font-size: 74px;
@@ -37,14 +37,16 @@ align-items: center;
 gap: 10px;
 `;
 const Line = styled.img`
-height: 5px;
+height: 3px;
 `;
 const Subtitle = styled.h2`
 color: #a00f0f;
+font-weight: 500;
 `;
 const Desc = styled.p`
-font-size: 24px;
+font-size: 20px;
 color: lightgray;
+margin-bottom: 20px; 
 `;
 const Button = styled.button`
 background-color: #a00f0f;
@@ -55,18 +57,26 @@ padding: 10px;
 border: none;
 border-radius: 5px;
 cursor: pointer;
+margin: 20px;
 
 `;
 
 
 const Right = styled.div`
 flex: 3;
-position: relative;
-
+display: flex;
+justify-content: space-between;
 `;
+
+const ImageContainer = styled.div`
+  width: 50%;
+  position: relative;
+`;
+
+
 const Img = styled.img`
-  width: 800px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   position: absolute;
   top: 0;
@@ -77,7 +87,7 @@ const Img = styled.img`
   animation: animate 2s infinite ease alternate;
 
   @keyframes animate {
-    to {
+    100% {
       transform: translateY(20px);
     }
   }
@@ -102,7 +112,15 @@ const Hero = () => {
         </Left>
         <Right>
             {/* 3d Model */}
-            <Img src="./img/pragesh.png" />
+            <ImageContainer>
+            <Img src="./img/pragesh2.png" alt="3D Model" />
+          </ImageContainer>
+          <ImageContainer>
+            <Img src="./img/pragesh.png" alt="Moon" />
+          </ImageContainer>
+          <ImageContainer>
+            <Img src="./img/pragesh3.png" />
+          </ImageContainer>
             </Right>
     </Container>
   </Section>
