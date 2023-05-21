@@ -18,6 +18,7 @@ const Links = styled.div`
   display: flex;
   align-items: flex-start; /* Adjusted to align items at the start */
   gap: 50px;
+  margin-right: 60px;
 `;
 
 const Logo = styled.img`
@@ -34,11 +35,11 @@ const List = styled.ul`
 
 const ListItem = styled.li`
 cursor: pointer;
+margin: 10px;
 `;
 
 const Icon = styled.img`
-width: 20px;
-
+width: 30px;
 `;
 
 
@@ -52,10 +53,15 @@ display: flex;
 
 const Button = styled.button`
 width: 100px;
-padding: 10px;
+padding: 12px;
 background-color: #a00f0f;
 color: white;
 cursor: pointer;
+margin: 40px;
+border: none;
+border-radius: 5px;
+
+
 `;
 
 const Navbar = () => {
@@ -71,10 +77,12 @@ const Navbar = () => {
             <ListItem>Contact</ListItem>
           </List>
         </Links>
+       
         <Icons>
           <Icon src="./img/search.png" alt="Search Icon" />
           <Button>Hire Now</Button>
         </Icons>
+        
       </Container>
     </Section>
   );
